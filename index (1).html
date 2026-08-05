@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiflah Sa'diyah Alma Sholihah - Personal Portfolio</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Admin / Edit Mode Header Bar -->
+    <div class="admin-bar">
+        <div class="admin-status">
+            <i class="fa-solid fa-globe"></i>
+            <span>Status Website:</span>
+            <span class="badge" id="modeBadge">PUBLIC LIVE</span>
+        </div>
+        <div class="admin-actions">
+            <button class="btn btn-outline" id="toggleEditBtn" onclick="toggleEditMode()">
+                <i class="fa-solid fa-pen-to-square"></i> Mode Edit Owner
+            </button>
+            <button class="btn btn-save" onclick="saveContent()">
+                <i class="fa-solid fa-floppy-disk"></i> Simpan Perubahan
+            </button>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-brand">TSAS<span>.dev</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#experience">Pengalaman</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#certifications">Sertifikasi</a></li>
+                <li><a href="#contact" class="nav-btn">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-grid">
+            <div class="avatar-wrapper">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" alt="Thiflah Sa'diyah Alma Sholihah" class="avatar" id="profileImg">
+            </div>
+            <div class="hero-content">
+                <div class="hero-tag">Welcome to my professional space</div>
+                <h1 contenteditable="true" id="name">Thiflah Sa'diyah Alma Sholihah</h1>
+                <h2 class="subtitle" contenteditable="true" id="title">IT Support Specialist | Electrical & System Engineer | Computer Vision Specialist & AI Enthusiast</h2>
+                
+                <p class="hero-desc" contenteditable="true" id="heroDesc">
+                    Graduate in Computer Technology from Telkom University (GPA 3.88/4.00) specializing in high-availability broadcasting support, computer vision systems, and network infrastructure.
+                </p>
+
+                <div class="contact-pills">
+                    <a href="mailto:difla78@gmail.com" class="pill"><i class="fa-solid fa-envelope"></i> <span contenteditable="true" id="email">difla78@gmail.com</span></a>
+                    <a href="tel:+6281615781690" class="pill"><i class="fa-solid fa-phone"></i> <span contenteditable="true" id="phone">+62 816-1578-1690</span></a>
+                    <span class="pill"><i class="fa-solid fa-location-dot"></i> Jombang / Jakarta Selatan</span>
+                    <span class="pill pill-highlight"><i class="fa-solid fa-graduation-cap"></i> GPA 3.88/4.00 Cum Laude</span>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Hubungi Saya</a>
+                    <a href="#projects" class="btn btn-secondary"><i class="fa-solid fa-diagram-project"></i> Lihat Proyek</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2 class="section-title"><i class="fa-solid fa-user"></i> Tentang Saya</h2>
+            <div class="card about-card" contenteditable="true" id="aboutText">
+                Lulusan D3 Computer Technology dari Telkom University dengan IPK 3.88/4.00 (Cum Laude). Memiliki fondasi teknis yang kuat dalam pemeliharaan sistem, troubleshooting hardware/software, serta keamanan jaringan dengan sertifikasi Google IT Support. Berpengalaman mengelola infrastruktur penyiaran berkecepatan tinggi dengan uptime 99.9% di PT Trans Digital Media (Detikcom), serta sukses menyelesaikan 95% masalah jaringan teknis sebagai koordinator laboratorium. Aktif mengembangkan solusi berbasis kecerdasan buatan (Computer Vision) dan IoT.
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> Pengalaman Kerja</h2>
+            <div class="grid-layout">
+                
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title" contenteditable="true">PT Trans Digital Media (Detikcom)</h3>
+                            <div class="card-subtitle" contenteditable="true">IT Streaming Support Intern</div>
+                        </div>
+                        <span class="card-date" contenteditable="true"><i class="fa-regular fa-calendar"></i> Nov 2025 - Sekarang</span>
+                    </div>
+                    <div class="card-body" contenteditable="true">
+                        <ul>
+                            <li>Mengelola infrastruktur teknis untuk siaran langsung bertekanan tinggi (Detik Pagi, Detik Sore, Detik Event) dengan standar stabilitas audiovisual & jaringan 99.9% uptime.</li>
+                            <li>Mengoperasikan software produksi tingkat tinggi (vMix, Wirecast, OBS) untuk multi-camera switching dan transisi siaran live.</li>
+                            <li>Melakukan troubleshooting real-time untuk mengatasi kendala latensi dan konektivitas hardware di platform YouTube, TikTok, dan Detikcom.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title" contenteditable="true">PT Kerta Rajasa Raya</h3>
+                            <div class="card-subtitle" contenteditable="true">Electrical Technician Intern</div>
+                        </div>
+                        <span class="card-date" contenteditable="true"><i class="fa-regular fa-calendar"></i> Okt 2025 - Nov 2025</span>
+                    </div>
+                    <div class="card-body" contenteditable="true">
+                        <ul>
+                            <li>Bertanggung jawab memantau dan mencatat performa harian dari 6 Sub-Distribution Panels (SDPs).</li>
+                            <li>Memimpin inisiatif digitalisasi pencatatan manual menjadi terstruktur dengan akurasi 100% untuk efisiensi konsumsi daya area produksi.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title" contenteditable="true">Embedded & Network System Laboratory</h3>
+                            <div class="card-subtitle" contenteditable="true">Computer Vision Specialist</div>
+                        </div>
+                        <span class="card-date" contenteditable="true"><i class="fa-regular fa-calendar"></i> Sep 2024 - Jun 2025</span>
+                    </div>
+                    <div class="card-body" contenteditable="true">
+                        <ul>
+                            <li>Merancang prototipe sistem deteksi kantuk real-time berbasis YOLOv8 & Dlib dengan akurasi 91% dan mAP 91.5%.</li>
+                            <li>Mengintegrasikan analisis EAR (Eye Aspect Ratio) & MAR (Mouth Aspect Ratio) ke dashboard monitoring berbasis API pada kecepatan 25 FPS (latensi 4ms).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title" contenteditable="true">Telkom University</h3>
+                            <div class="card-subtitle" contenteditable="true">Teaching Assistant & Coordinator</div>
+                        </div>
+                        <span class="card-date" contenteditable="true"><i class="fa-regular fa-calendar"></i> Feb 2024 - Jun 2025</span>
+                    </div>
+                    <div class="card-body" contenteditable="true">
+                        <ul>
+                            <li>Memimpin tim asisten lab dalam mengelola infrastruktur IT, berhasil menyelesaikan 95% masalah teknis jaringan untuk 100+ mahasiswa.</li>
+                            <li>Bertanggung jawab atas konfigurasi hardware, sistem operasi, serta IDE laboratorium.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2 class="section-title"><i class="fa-solid fa-code"></i> Proyek Unggulan</h2>
+            <div class="grid-layout">
+
+                <div class="card project-card">
+                    <div class="card-header">
+                        <h3 class="card-title" contenteditable="true">Driver Behavior Detection System</h3>
+                        <div class="card-subtitle" contenteditable="true">Computer Vision & AI Safety</div>
+                    </div>
+                    <div class="card-body" contenteditable="true">
+                        Sistem deteksi kantuk pengemudi real-time menggunakan YOLOv8, Dlib, dan OpenCV. Memantau penutupan mata dan menguap, lalu mengirimkan notifikasi peringatan ke server untuk keselamatan berkendara.
+                    </div>
+                    <div class="tag-cloud">
+                        <span class="tag">Python</span>
+                        <span class="tag">YOLOv8</span>
+                        <span class="tag">OpenCV</span>
+                        <span class="tag">Dlib</span>
+                    </div>
+                </div>
+
+                <div class="card project-card">
+                    <div class="card-header">
+                        <h3 class="card-title" contenteditable="true">Solar Panel Hydroponic System</h3>
+                        <div class="card-subtitle" contenteditable="true">IoT & Smart Energy Monitoring</div>
+                    </div>
+                    <div class="card-body" contenteditable="true">
+                        Sistem pemantauan IoT berbasis Firebase untuk pelacakan pH dan nutrisi secara real-time, memastikan sinkronisasi data yang mulus antara sensor dan web dashboard.
+                    </div>
+                    <div class="tag-cloud">
+                        <span class="tag">IoT</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">ESP32</span>
+                        <span class="tag">Dashboard</span>
+                    </div>
+                </div>
+
+                <div class="card project-card">
+                    <div class="card-header">
+                        <h3 class="card-title" contenteditable="true">Line Following Robot</h3>
+                        <div class="card-subtitle" contenteditable="true">Robotics & Control System</div>
+                    </div>
+                    <div class="card-body" contenteditable="true">
+                        Robot pemandu garis menggunakan Arduino Nano, IR sensor array, dan algoritma kendali PID dengan integrasi aplikasi MIT App Inventor untuk kalibrasi Bluetooth real-time.
+                    </div>
+                    <div class="tag-cloud">
+                        <span class="tag">Arduino</span>
+                        <span class="tag">PID Algorithm</span>
+                        <span class="tag">Bluetooth</span>
+                        <span class="tag">MIT App</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Certifications & Awards Section -->
+        <section id="certifications" class="section">
+            <h2 class="section-title"><i class="fa-solid fa-award"></i> Sertifikasi & Penghargaan</h2>
+            <div class="grid-layout">
+
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title" contenteditable="true">Juara 3 Innovation Track - Huawei ICT Competition</h3>
+                            <div class="card-subtitle" contenteditable="true">Tingkat Nasional | Dec 2024</div>
+                        </div>
+                    </div>
+                    <div class="card-body" contenteditable="true">
+                        Penghargaan nasional atas pengembangan Driver Fatigue Detection System berbasis kecerdasan buatan dan komputasi awan.
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title" contenteditable="true">Google IT Support Certificate</h3>
+                            <div class="card-subtitle" contenteditable="true">Coursera / Google</div>
+                        </div>
+                    </div>
+                    <div class="card-body" contenteditable="true">
+                        Kompetensi komprehensif dalam troubleshooting teknis, jaringan komputer, administrasi sistem, dan keamanan cyber.
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title" contenteditable="true">Sertifikasi Teknis Cisco & Dicoding</h3>
+                            <div class="card-subtitle" contenteditable="true">Cisco, AWS & Microsoft Azure</div>
+                        </div>
+                    </div>
+                    <div class="card-body" contenteditable="true">
+                        CCNAv7 Enterprise Networking, CyberOps Associate, AWS Cloud Practitioner Essentials, dan Microsoft Azure Gen AI Developer.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2 class="section-title"><i class="fa-solid fa-paper-plane"></i> Hubungi Saya</h2>
+            <div class="card contact-card">
+                <p>Tertarik untuk berkolaborasi atau memiliki peluang karir di bidang IT Support, Computer Vision, maupun AI Engineering?</p>
+                <div class="contact-links">
+                    <a href="mailto:difla78@gmail.com" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Kirim Email</a>
+                    <a href="https://linkedin.com" target="_blank" class="btn btn-secondary"><i class="fa-brands fa-linkedin"></i> Profil LinkedIn</a>
+                    <a href="https://github.com" target="_blank" class="btn btn-outline-dark"><i class="fa-brands fa-github"></i> Repository GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>© <span id="year"></span> Thiflah Sa'diyah Alma Sholihah. Created for GitHub Pages deployment.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
