@@ -251,8 +251,11 @@ body {
 .hero-desc {
     color: #cbd5e1;
     font-size: 1rem;
+    line-height: 1.6;
     margin-bottom: 20px;
     max-width: 750px;
+    text-align: left; /* Atur rata kiri */
+    white-space: normal; /* Memastikan spasi HTML tidak merusak tata letak */
 }
 
 .contact-pills {
