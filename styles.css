@@ -131,7 +131,7 @@ body {
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
     position: sticky;
-    top: 48px;
+    top: 0;
     z-index: 900;
 }
 
