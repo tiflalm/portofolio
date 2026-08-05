@@ -1,4 +1,4 @@
-/* Modern Clean Stylesheet for Portfolio */
+/* Modern Clean Stylesheet for Portfolio - Fully Responsive */
 :root {
     --primary: #0f172a;
     --primary-light: #1e293b;
@@ -23,6 +23,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -30,6 +31,7 @@ body {
     background-color: var(--bg-body);
     color: var(--text-primary);
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 /* Admin Edit Bar */
@@ -125,10 +127,11 @@ body {
     background: var(--bg-body);
 }
 
-/* Navbar */
+/* Navbar Sticky */
 .navbar {
-    background: rgba(15, 23, 42, 0.95); /* Warna gelap menyatu dengan tema Hero */
+    background: rgba(15, 23, 42, 0.95);
     backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     position: sticky;
     top: 0;
@@ -160,7 +163,7 @@ body {
 }
 
 .nav-brand span {
-    color: #3b82f6; /* Warna biru aksen */
+    color: #3b82f6;
 }
 
 /* Badge Status "Available for Opportunities" */
@@ -224,9 +227,10 @@ body {
     background: #1d4ed8;
 }
 
-/* Container */
+/* Container Responsif */
 .container {
     max-width: 1100px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 24px;
 }
@@ -292,8 +296,8 @@ body {
     line-height: 1.6;
     margin-bottom: 20px;
     max-width: 750px;
-    text-align: left; /* Atur rata kiri */
-    white-space: normal; /* Memastikan spasi HTML tidak merusak tata letak */
+    text-align: left;
+    white-space: normal;
 }
 
 .contact-pills {
@@ -314,6 +318,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 6px;
+    word-break: break-word;
 }
 
 .pill-highlight {
@@ -325,9 +330,10 @@ body {
 .hero-cta {
     display: flex;
     gap: 12px;
+    flex-wrap: wrap;
 }
 
-/* Section */
+/* Section Layout */
 .section {
     padding: 50px 0 10px 0;
 }
@@ -346,7 +352,7 @@ body {
     color: var(--accent);
 }
 
-/* Cards & Layout */
+/* Cards & Grid Layout */
 .card {
     background: var(--card-bg);
     border: 1px solid var(--border);
@@ -369,7 +375,7 @@ body {
 
 .grid-layout {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
@@ -431,10 +437,10 @@ body {
     font-weight: 600;
 }
 
-/* Contact Card */
+/* Contact Card Section */
 .contact-card {
     text-align: center;
-    padding: 40px;
+    padding: 40px 20px;
 }
 
 .contact-card p {
@@ -450,10 +456,9 @@ body {
     flex-wrap: wrap;
 }
 
-/* Footer */
-/* Styling Footer Presisi Eksak ala Referensi */
+/* Footer Section Presisi */
 .site-footer {
-    background-color: #0b1120; /* Warna background dark navy eksak */
+    background-color: #0b1120;
     color: #94a3b8;
     padding: 60px 0 35px 0;
     margin-top: 80px;
@@ -462,12 +467,11 @@ body {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 1.3fr 1fr 1.2fr; /* Proporsi lebar 3 kolom */
+    grid-template-columns: 1.3fr 1fr 1.2fr;
     gap: 40px;
     padding-bottom: 50px;
 }
 
-/* Kolom 1 */
 .footer-name {
     color: #ffffff;
     font-size: 1.35rem;
@@ -483,7 +487,6 @@ body {
     max-width: 380px;
 }
 
-/* Kolom 2 & 3 Headings */
 .footer-heading {
     color: #ffffff;
     font-size: 1.1rem;
@@ -491,7 +494,6 @@ body {
     margin-bottom: 18px;
 }
 
-/* Lists & Icons */
 .footer-list {
     list-style: none;
     padding: 0;
@@ -511,6 +513,7 @@ body {
     color: #cbd5e1;
     text-decoration: none;
     transition: color 0.2s ease;
+    word-break: break-all;
 }
 
 .footer-list a:hover {
@@ -521,25 +524,25 @@ body {
     font-size: 1rem;
     width: 20px;
     text-align: center;
+    flex-shrink: 0;
 }
 
-/* Warna Ikon Pita Highlights */
 .footer-list i.fa-envelope,
 .footer-list i.fa-linkedin,
 .footer-list i.fa-location-dot {
-    color: #38bdf8; /* Warna biru cerah untuk ikon kontak */
+    color: #38bdf8;
 }
 
 .icon-gold { color: #f59e0b !important; }
 .icon-green { color: #10b981 !important; }
 .icon-blue { color: #3b82f6 !important; }
 
-/* Baris Bawah (Kanan - Kiri) */
 .footer-bottom {
     display: flex;
-    justify-content: space-between; /* Menempatkan copyright di kiri dan info tech di kanan */
+    justify-content: space-between;
     align-items: center;
     padding-top: 28px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
     font-size: 0.88rem;
     color: #64748b;
 }
@@ -549,15 +552,115 @@ body {
     font-size: 0.88rem;
 }
 
-/* Penyesuaian Tampilan Layar HP */
-@media (max-width: 768px) {
+/* =========================================================
+   MEDIA QUERIES (MEDIA SYSTEM ADAPTATION UNTUK TABLET & HP)
+   ========================================================= */
+
+/* Layar Laptop Sedang / Tablet Landscape (≤ 1024px) */
+@media (max-width: 1024px) {
+    .nav-links {
+        gap: 12px;
+    }
+    .nav-links a {
+        font-size: 0.82rem;
+    }
+    .hero-content h1 {
+        font-size: 2rem;
+    }
     .footer-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 30px;
+    }
+}
+
+/* Layar Tablet & Smartphone Portrait (≤ 768px) */
+@media (max-width: 768px) {
+    /* Navbar HP */
+    .nav-container {
+        padding: 12px 16px;
+    }
+    .nav-links {
+        display: none; /* Sembunyikan menu tautan panjang agar tidak memakan tempat di HP */
+    }
+    .status-badge {
+        font-size: 0.7rem;
+        padding: 3px 8px;
+    }
+
+    /* Hero Section HP */
+    .hero {
+        padding: 40px 0;
+    }
+    .hero-grid {
+        grid-template-columns: 1fr; /* Ubah tampilan foto & teks menjadi 1 kolom vertikal */
+        gap: 24px;
+        text-align: center;
+    }
+    .avatar {
+        width: 150px;
+        height: 150px;
+    }
+    .hero-content h1 {
+        font-size: 1.75rem;
+    }
+    .hero-content .subtitle {
+        font-size: 0.98rem;
+    }
+    .hero-desc {
+        text-align: center;
+        font-size: 0.92rem;
+    }
+    .contact-pills {
+        justify-content: center;
+    }
+    .hero-cta {
+        justify-content: center;
+    }
+
+    /* Grid Kartu Proyek/Pengalaman di HP */
+    .grid-layout {
+        grid-template-columns: 1fr; /* 1 kolom penuh di layar ponsel */
+    }
+    .card {
+        padding: 18px;
+    }
+
+    /* Footer di HP */
+    .site-footer {
+        padding: 40px 0 25px 0;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr; /* Ubah footer 3 kolom menjadi 1 kolom bertumpuk */
+        gap: 30px;
+    }
+    .footer-desc {
+        max-width: 100%;
     }
     .footer-bottom {
         flex-direction: column;
-        gap: 10px;
+        gap: 12px;
         text-align: center;
+    }
+}
+
+/* Layar Smartphone Kecil (≤ 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+    .admin-bar {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+    .status-badge {
+        display: none; /* Sembunyikan badge status pada layar HP sangat sempit */
+    }
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+    .btn {
+        width: 100%; /* Tombol memenuhi lebar layar HP kecil */
+        justify-content: center;
     }
 }
