@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,15 +18,15 @@
     <div class="admin-bar">
         <div class="admin-status">
             <i class="fa-solid fa-globe"></i>
-            <span>Status Website:</span>
+            <span>Website Status:</span>
             <span class="badge" id="modeBadge">PUBLIC LIVE</span>
         </div>
         <div class="admin-actions">
             <button class="btn btn-outline" id="toggleEditBtn" onclick="toggleEditMode()">
-                <i class="fa-solid fa-pen-to-square"></i> Mode Edit Owner
+                <i class="fa-solid fa-pen-to-square"></i> Owner Edit Mode
             </button>
             <button class="btn btn-save" onclick="saveContent()">
-                <i class="fa-solid fa-floppy-disk"></i> Simpan Perubahan
+                <i class="fa-solid fa-floppy-disk"></i> Save Changes
             </button>
         </div>
     </div>
@@ -37,9 +37,12 @@
             <a href="#" class="nav-brand">TSAS<span>.dev</span></a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#awards">Awards</a></li>
                 <li><a href="#contact" class="nav-btn">Contact</a></li>
             </ul>
         </div>
@@ -49,27 +52,27 @@
     <header class="hero">
         <div class="container hero-grid">
             <div class="avatar-wrapper">
-                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" alt="Thiflah Sa'diyah Alma Sholihah" class="avatar" id="profileImg">
+                <img src="profile.jpg" alt="Thiflah Sa'diyah Alma Sholihah" class="avatar" id="profileImg">
             </div>
             <div class="hero-content">
-                <div class="hero-tag">Welcome to my portofolio</div>
+                <div class="hero-tag">Welcome to my portfolio</div>
                 <h1 contenteditable="true" id="name">Thiflah Sa'diyah Alma Sholihah</h1>
                 <h2 class="subtitle" contenteditable="true" id="title">IT Support | Electrical & System Engineer | Computer Vision Specialist & AI Enthusiast</h2>
                 
                 <p class="hero-desc" contenteditable="true" id="heroDesc">
-                    Graduate in Computer Technology from Telkom University (GPA 3.88/4.00) specializing in high-availability IT Support, computer vision systems, and network infrastructure.
+                    Computer Technology graduate from Telkom University with a 3.88/4.00 GPA, possessing strong technical foundations in system maintenance, troubleshooting, network security, and AI development.
                 </p>
 
                 <div class="contact-pills">
                     <a href="mailto:difla78@gmail.com" class="pill"><i class="fa-solid fa-envelope"></i> <span contenteditable="true" id="email">difla78@gmail.com</span></a>
                     <a href="tel:+6281615781690" class="pill"><i class="fa-solid fa-phone"></i> <span contenteditable="true" id="phone">+62 816-1578-1690</span></a>
-                    <span class="pill"><i class="fa-solid fa-location-dot"></i> Jombang </span>
-                    <span class="pill pill-highlight"><i class="fa-solid fa-graduation-cap"></i> GPA 3.88/4.00 Cum Laude</span>
+                    <span class="pill"><i class="fa-solid fa-location-dot"></i> Jombang / South Jakarta, Indonesia</span>
+                    <span class="pill pill-highlight"><i class="fa-solid fa-graduation-cap"></i> GPA 3.88/4.00 (Cum Laude)</span>
                 </div>
 
                 <div class="hero-cta">
                     <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
-                    <a href="#projects" class="btn btn-secondary"><i class="fa-solid fa-diagram-project"></i> View the Project</a>
+                    <a href="#projects" class="btn btn-secondary"><i class="fa-solid fa-diagram-project"></i> View Projects</a>
                 </div>
             </div>
         </div>
@@ -84,6 +87,46 @@
             </div>
         </section>
 
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+            <div class="grid-layout">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title" contenteditable="true">Diploma (D3) - Computer Technology</h3>
+                            <div class="card-subtitle" contenteditable="true">Telkom University, Bandung</div>
+                        </div>
+                        <span class="card-date" contenteditable="true"><i class="fa-regular fa-calendar"></i> August 2022 - July 2025</span>
+                    </div>
+                    <div class="card-body" contenteditable="true">
+                        <ul>
+                            <li>Graduated from Telkom University in 2025 with a GPA of 3.88/4.00 (Cum Laude).</li>
+                            <li>Final thesis focused on digital innovation and artificial intelligence.</li>
+                            <li>Developed expertise in computer vision, created driver drowsiness detection system.</li>
+                            <li>National champion in Huawei ICT Competition (Innovation Track) and Bank Indonesia Scholarship Awardee.</li>
+                            <li>Experience as exchange student at Batam State Polytechnic, honed cross-cultural skills.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title" contenteditable="true">MA - MIPA (Natural Sciences)</h3>
+                            <div class="card-subtitle" contenteditable="true">MAN 3 JOMBANG, Jombang</div>
+                        </div>
+                        <span class="card-date" contenteditable="true"><i class="fa-regular fa-calendar"></i> July 2018 - May 2021</span>
+                    </div>
+                    <div class="card-body" contenteditable="true">
+                        <p>While attending MAN 3 Jombang, I actively participated in various extracurricular activities, particularly the Scouting program (mandatory) and the Paskibra. In Paskibra, I not only participated as a member but was also actively involved in leadership as the Logistics and Inventory Coordinator, responsible for managing equipment and supplies for activities.</p>
+                        <p>I was also involved in various Paskibra activities, such as joint Paskibra training sessions across Jombang and serving on the organizing committee for Paskibra training at the MA level across Jombang, which provided me with experience in team coordination and event management. Additionally, I helped initiate the team’s participation in a Paskibra competition, which was successfully proposed and approved by the school for the first time during our cohort.</p>
+                        <p>In addition to being active in organizations, I also participated in various online academic competitions as a way to develop my academic skills and competitiveness. These experiences have shaped me into a disciplined and responsible individual who is able to balance academic and non-academic activities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Experience Section -->
         <section id="experience" class="section">
             <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> Work Experience</h2>
@@ -93,13 +136,17 @@
                     <div class="card-header">
                         <div>
                             <h3 class="card-title" contenteditable="true">PT Trans Digital Media (Detikcom)</h3>
-                            <div class="card-subtitle" contenteditable="true">IT Streaming Support Intern</div>
+                            <div class="card-subtitle" contenteditable="true">IT Streaming Support</div>
                         </div>
-                        <span class="card-date" contenteditable="true"><i class="fa-regular fa-calendar"></i> Nov 2025 - May 2026</span>
+                        <span class="card-date" contenteditable="true"><i class="fa-regular fa-calendar"></i> November 2025 - Present</span>
                     </div>
                     <div class="card-body" contenteditable="true">
+                        <p>South Jakarta</p>
                         <ul>
-                            <li>As a dedicated Streaming Operations, I successfully managed the technical infrastructure for high-traffic broadcasts such as Detik Pagi, Detik Sore, and Detik Event, consistently achieving a 99.9% uptime for audiovisual and network stability. My expertise includes leveraging production grade software specifically vMix, Wirecast, and OBS to execute seamless multi camera switching and program transitions. I am adept at real-time troubleshooting, swiftly resolving latency and hardware connectivity challenges across major platforms, including YouTube, TikTok, Instagram, and the Detikcom website. Furthermore, I ensure operational continuity and high-quality viewer experiences through proactive system monitoring and effective remote management support.</li>
+                            <li>As a dedicated Streaming Operations, I successfully managed the technical infrastructure for high-traffic broadcasts such as Detik Pagi, Detik Sore, and Detik Event, consistently achieving a 99.9% uptime for audiovisual and network stability.</li>
+                            <li>My expertise includes leveraging production grade software specifically vMix, Wirecast, and OBS to execute seamless multi camera switching and program transitions.</li>
+                            <li>I am adept at real-time troubleshooting, swiftly resolving latency and hardware connectivity challenges across major platforms, including YouTube, TikTok, Instagram, and the Detikcom website.</li>
+                            <li>Furthermore, I ensure operational continuity and high-quality viewer experiences through proactive system monitoring and effective remote management support.</li>
                         </ul>
                     </div>
                 </div>
@@ -108,13 +155,16 @@
                     <div class="card-header">
                         <div>
                             <h3 class="card-title" contenteditable="true">PT Kerta Rajasa Raya</h3>
-                            <div class="card-subtitle" contenteditable="true">Electrical Technician Intern</div>
+                            <div class="card-subtitle" contenteditable="true">Electrical Technician</div>
                         </div>
-                        <span class="card-date" contenteditable="true"><i class="fa-regular fa-calendar"></i> Oct 2025 - Nov 2025</span>
+                        <span class="card-date" contenteditable="true"><i class="fa-regular fa-calendar"></i> October 2025 - November 2025</span>
                     </div>
                     <div class="card-body" contenteditable="true">
+                        <p>Sidoarjo</p>
                         <ul>
-                            <li>I have extensive experience in System Monitoring, with responsibility for overseeing and recording the daily performance of 6 Sub-Distribution Panels (SDPs) to ensure the consistent validity of energy consumption data. I successfully led an initiative to digitize manual logs into structured data, achieving 100% monitoring accuracy, which enables more precise, data-driven analysis of daily consumption patterns. My focus on operational efficiency includes strict monitoring of critical components such as KWh meters and inverters, where I provide valid data to support more efficient power usage optimization in production areas, ensuring that the energy infrastructure remains reliable and optimized.</li>
+                            <li>I have extensive experience in System Monitoring, with responsibility for overseeing and recording the daily performance of 6 Sub-Distribution Panels (SDPs) to ensure the consistent validity of energy consumption data.</li>
+                            <li>I successfully led an initiative to digitize manual logs into structured data, achieving 100% monitoring accuracy, which enables more precise, data-driven analysis of daily consumption patterns.</li>
+                            <li>My focus on operational efficiency includes strict monitoring of critical components such as KWh meters and inverters, where I provide valid data to support more efficient power usage optimization in production areas, ensuring that the energy infrastructure remains reliable and optimized.</li>
                         </ul>
                     </div>
                 </div>
@@ -122,15 +172,17 @@
                 <div class="card">
                     <div class="card-header">
                         <div>
-                            <h3 class="card-title" contenteditable="true">Embedded & Network System Laboratory</h3>
+                            <h3 class="card-title" contenteditable="true">Embedded and Network System Laboratory</h3>
                             <div class="card-subtitle" contenteditable="true">Computer Vision Specialist</div>
                         </div>
-                        <span class="card-date" contenteditable="true"><i class="fa-regular fa-calendar"></i> Sep 2024 - Jun 2025</span>
+                        <span class="card-date" contenteditable="true"><i class="fa-regular fa-calendar"></i> September 2024 - June 2025</span>
                     </div>
                     <div class="card-body" contenteditable="true">
+                        <p>Bandung</p>
                         <ul>
-                            <li>Merancang prototipe sistem deteksi kantuk real-time berbasis YOLOv8 & Dlib dengan akurasi 91% dan mAP 91.5%.</li>
-                            <li>Mengintegrasikan analisis EAR (Eye Aspect Ratio) & MAR (Mouth Aspect Ratio) ke dashboard monitoring berbasis API pada kecepatan 25 FPS (latensi 4ms).</li>
+                            <li>With deep expertise in AI development, I successfully designed a real-time drowsiness detection system prototype based on YOLOv8 and Dlib, achieving an accuracy rate of 91% and mAP of 91.5%.</li>
+                            <li>This system implements precise multimedia feature analysis, integrating EAR (Eye Aspect Ratio), MAR (Mouth Aspect Ratio), and head tilt pattern analysis to accurately detect signs of fatigue.</li>
+                            <li>With a focus on performance optimization, I achieved a processing speed of 25 FPS with very low inference latency 4 ms per frame and integrated the results of this visual analysis into an API-based monitoring dashboard for efficient and responsive data monitoring.</li>
                         </ul>
                     </div>
                 </div>
@@ -141,12 +193,13 @@
                             <h3 class="card-title" contenteditable="true">Telkom University</h3>
                             <div class="card-subtitle" contenteditable="true">Teaching Assistant & Coordinator</div>
                         </div>
-                        <span class="card-date" contenteditable="true"><i class="fa-regular fa-calendar"></i> Feb 2024 - Jun 2025</span>
+                        <span class="card-date" contenteditable="true"><i class="fa-regular fa-calendar"></i> February 2024 - June 2025</span>
                     </div>
                     <div class="card-body" contenteditable="true">
+                        <p>Bandung</p>
                         <ul>
-                            <li>Memimpin tim asisten lab dalam mengelola infrastruktur IT, berhasil menyelesaikan 95% masalah teknis jaringan untuk 100+ mahasiswa.</li>
-                            <li>Bertanggung jawab atas konfigurasi hardware, sistem operasi, serta IDE laboratorium.</li>
+                            <li>As a dedicated lab assistant, I successfully led a team in proactively managing the IT infrastructure, a leadership role that resulted in the resolution of 95% of network-related technical issues for over 100 students.</li>
+                            <li>In addition to my managerial responsibilities, I was also fully responsible for the lab’s operational support, ranging from hardware configuration to the installation of critical software such as operating systems and IDEs.</li>
                         </ul>
                     </div>
                 </div>
@@ -156,16 +209,16 @@
 
         <!-- Projects Section -->
         <section id="projects" class="section">
-            <h2 class="section-title"><i class="fa-solid fa-code"></i> Proyek Unggulan</h2>
+            <h2 class="section-title"><i class="fa-solid fa-code"></i> Featured Projects</h2>
             <div class="grid-layout">
 
                 <div class="card project-card">
                     <div class="card-header">
                         <h3 class="card-title" contenteditable="true">Driver Behavior Detection System</h3>
-                        <div class="card-subtitle" contenteditable="true">Computer Vision & AI Safety</div>
+                        <div class="card-subtitle" contenteditable="true">Computer Vision & AI</div>
                     </div>
                     <div class="card-body" contenteditable="true">
-                        Sistem deteksi kantuk pengemudi real-time menggunakan YOLOv8, Dlib, dan OpenCV. Memantau penutupan mata dan menguap, lalu mengirimkan notifikasi peringatan ke server untuk keselamatan berkendara.
+                        Designed and implemented a real-time driver drowsiness detection prototype using YOLOv8, Dlib, and OpenCV in Python. The system monitors facial landmarks such as eye closure and yawning and when signs of drowsiness are detected, it sends data to a server and triggers an alert notification to enhance driving safety.
                     </div>
                     <div class="tag-cloud">
                         <span class="tag">Python</span>
@@ -177,77 +230,270 @@
 
                 <div class="card project-card">
                     <div class="card-header">
-                        <h3 class="card-title" contenteditable="true">Solar Panel Hydroponic System</h3>
-                        <div class="card-subtitle" contenteditable="true">IoT & Smart Energy Monitoring</div>
+                        <h3 class="card-title" contenteditable="true">Line Following Robot</h3>
+                        <div class="card-subtitle" contenteditable="true">Robotics & Control System</div>
                     </div>
                     <div class="card-body" contenteditable="true">
-                        Sistem pemantauan IoT berbasis Firebase untuk pelacakan pH dan nutrisi secara real-time, memastikan sinkronisasi data yang mulus antara sensor dan web dashboard.
+                        Developing a line following robot using an Arduino Nano and an infrared sensor array controlled by a PID algorithm, and equipped with a MIT App Inventor mobile interface for real-time Bluetooth based sensor calibration and parameter adjustment.
                     </div>
                     <div class="tag-cloud">
-                        <span class="tag">IoT</span>
-                        <span class="tag">Firebase</span>
-                        <span class="tag">ESP32</span>
-                        <span class="tag">Dashboard</span>
+                        <span class="tag">Arduino Nano</span>
+                        <span class="tag">PID Algorithm</span>
+                        <span class="tag">Bluetooth</span>
+                        <span class="tag">MIT App Inventor</span>
                     </div>
                 </div>
 
                 <div class="card project-card">
                     <div class="card-header">
-                        <h3 class="card-title" contenteditable="true">Line Following Robot</h3>
-                        <div class="card-subtitle" contenteditable="true">Robotics & Control System</div>
+                        <h3 class="card-title" contenteditable="true">Solar Panel-Based Hydroponic System</h3>
+                        <div class="card-subtitle" contenteditable="true">IoT & Smart Energy</div>
                     </div>
                     <div class="card-body" contenteditable="true">
-                        Robot pemandu garis menggunakan Arduino Nano, IR sensor array, dan algoritma kendali PID dengan integrasi aplikasi MIT App Inventor untuk kalibrasi Bluetooth real-time.
+                        Developed a Firebase based IoT monitoring system for real-time pH and nutrient tracking, ensuring seamless data synchronization between sensors and the dashboard.
                     </div>
                     <div class="tag-cloud">
-                        <span class="tag">Arduino</span>
-                        <span class="tag">PID Algorithm</span>
-                        <span class="tag">Bluetooth</span>
-                        <span class="tag">MIT App</span>
+                        <span class="tag">IoT</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">Sensors</span>
+                        <span class="tag">Dashboard</span>
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <!-- Certifications & Awards Section -->
+        <!-- Organization Section -->
+        <section id="organization" class="section">
+            <h2 class="section-title"><i class="fa-solid fa-users"></i> Organizational Experience</h2>
+            <div class="grid-layout">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title" contenteditable="true">Generasi Baru Indonesia (GenBI) Telkom University</h3>
+                            <div class="card-subtitle" contenteditable="true">Internal Department Staff</div>
+                        </div>
+                        <span class="card-date" contenteditable="true"><i class="fa-regular fa-calendar"></i> September 2024 - August 2025</span>
+                    </div>
+                    <div class="card-body" contenteditable="true">
+                        Coordinated internal events and community outreach programs aimed at enhancing team unity and promoting campus social engagement.
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title" contenteditable="true">Student Affairs Ambassador</h3>
+                            <div class="card-subtitle" contenteditable="true">Student Affairs Buddy Faculty of Applied Sciences</div>
+                        </div>
+                        <span class="card-date" contenteditable="true"><i class="fa-regular fa-calendar"></i> March 2024 - March 2025</span>
+                    </div>
+                    <div class="card-body" contenteditable="true">
+                        Supported student affairs initiatives at the Faculty of Applied Sciences.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="section-title"><i class="fa-solid fa-list-check"></i> Skills</h2>
+            <div class="grid-layout">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Technical & Software Skills</h3>
+                    </div>
+                    <div class="tag-cloud">
+                        <span class="tag">VirtualBox</span>
+                        <span class="tag">VMware</span>
+                        <span class="tag">vMix</span>
+                        <span class="tag">Wirecast</span>
+                        <span class="tag">OBS</span>
+                        <span class="tag">Microsoft Teams</span>
+                        <span class="tag">Discord</span>
+                        <span class="tag">Google Workspace</span>
+                        <span class="tag">Microsoft PowerPoint</span>
+                        <span class="tag">Microsoft Word</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">Linux</span>
+                        <span class="tag">System Monitoring</span>
+                        <span class="tag">NumPy</span>
+                        <span class="tag">Prototyping</span>
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">System Maintenance</span>
+                        <span class="tag">Image Processing</span>
+                        <span class="tag">Technical Support</span>
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">IT Support</span>
+                        <span class="tag">Troubleshooting</span>
+                        <span class="tag">Remote Support</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Soft Skills</h3>
+                    </div>
+                    <div class="tag-cloud">
+                        <span class="tag">Leadership</span>
+                        <span class="tag">Detail-Oriented</span>
+                        <span class="tag">Initiative</span>
+                        <span class="tag">Stress Management</span>
+                        <span class="tag">Problem Solving</span>
+                        <span class="tag">Professionalism</span>
+                        <span class="tag">Teamwork</span>
+                        <span class="tag">Analytical Thinking</span>
+                        <span class="tag">Classroom Management</span>
+                        <span class="tag">Discipline</span>
+                        <span class="tag">Communication</span>
+                        <span class="tag">Time Management</span>
+                        <span class="tag">Public Speaking</span>
+                        <span class="tag">Adaptability</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
         <section id="certifications" class="section">
-            <h2 class="section-title"><i class="fa-solid fa-award"></i> Sertifikasi & Penghargaan</h2>
+            <h2 class="section-title"><i class="fa-solid fa-award"></i> Certifications</h2>
+            <div class="grid-layout">
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Google IT Support</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>This certificate is designed to prepare participants for various entry-level roles in the field of IT Support through a hands-on learning approach. In this program, I studied five main topics:</p>
+                        <ul>
+                            <li>Fundamentals of Technical Support, covering troubleshooting and user support</li>
+                            <li>The Ins and Outs of Computer Networks, covering network concepts and connectivity</li>
+                            <li>Operating Systems and You, covering the use and management of operating systems</li>
+                            <li>System Administration and IT Infrastructure Services, covering the management of IT systems and services</li>
+                            <li>IT Security: Defending Against Digital Crime, focusing on system and data protection</li>
+                        </ul>
+                        <p>Through this certification, I have developed competencies in technical problem-solving, customer service, networking, operating systems, system administration, and IT security. This achievement demonstrates my readiness to contribute in the field of information technology, particularly in IT Support roles that require both technical skills and strong communication abilities.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Huawei Certifications</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>HCIA Security V4.0:</strong> Learned about network and system security concepts, such as protection against cyber threats, security management, and the implementation of security mechanisms in IT infrastructure.</li>
+                            <li><strong>HCIA-Datacom V1.0:</strong> Demonstrates mastery of computer networking fundamentals (data communication), including routing and switching concepts, as well as network infrastructure in modern communication systems.</li>
+                            <li><strong>Digital Power:</strong> Completed training on digital power technologies, including energy digitalization, smart infrastructure, and sustainable technology solutions.</li>
+                            <li><strong>HCIA-AI V3.0 Course:</strong> Completed foundational training in Artificial Intelligence, covering basic concepts of AI, machine learning, and Huawei AI ecosystem.</li>
+                            <li><strong>AI Basic Overview of AI</strong></li>
+                            <li><strong>Overview of IoT Technologies (CRA Training Program)</strong></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Cisco Networking Academy</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Introduction to Cybersecurity:</strong> Covered basic concepts, common threats/attacks, defense principles, personal security awareness, and cybersecurity careers.</li>
+                            <li><strong>Networking Basics:</strong> Covered basic networking concepts, devices, network types, OSI & TCP/IP models, basic network security, and IT career preparation.</li>
+                            <li><strong>CCNAv7: Introduction to Networks:</strong> Configuring switches/routers, Ethernet operation, IPv4/IPv6 addressing, upper-layer OSI protocols, and network troubleshooting.</li>
+                            <li><strong>CCNAv7: Enterprise Networking, Security, and Automation:</strong> OSPFv2, ACLs, NAT, WAN scalability, QoS, network automation, and virtualization.</li>
+                            <li><strong>CyberOps Associate:</strong> Analyzing cybersecurity threat events, Windows/Linux features for security, cryptographic impacts, endpoint vulnerability analysis, and incident response.</li>
+                            <li><strong>Cisco Basics</strong></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">ID-Networkers & Development</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Basic Mikrotik</li>
+                            <li>Basic Computer Networks</li>
+                            <li>Learn Linux from Zero+</li>
+                            <li>Basic Dart Programming</li>
+                            <li>Network Simulation with PNETlab</li>
+                            <li><strong>Belajar Dasar Pemrograman JavaScript (Dicoding):</strong> JavaScript fundamentals, data structures (Objects, Arrays, Maps, Sets), OOP, Functional Programming, Node.js, asynchronous handling, NPM, and automated testing.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Cloud & AI (Dicoding)</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Belajar Penerapan Data Science dengan Microsoft Fabric:</strong> Data exploration/preprocessing, MLflow tracking, model deployment, and performance monitoring.</li>
+                            <li><strong>Cloud Practitioner Essentials (Belajar Dasar AWS Cloud):</strong> Cloud computing basics, key AWS services (EC2, S3, EBS, DynamoDB, VPC), security/compliance, CloudWatch, and AWS CAF migration strategies.</li>
+                            <li><strong>Membangun Aplikasi Gen AI dengan Microsoft Azure:</strong> Planning AI projects with Azure AI Foundry, LLM catalog deployment, RAG solutions, Prompt Flow, and Responsible AI principles.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Professional Competency Certifications</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Public Speaking:</strong> Public Speaking, Master of Ceremonies (MC), Speech Writing, Spokesperson, Moderator, and Briefing Material Preparation.</li>
+                            <li><strong>Electrical Power Utilization Installation:</strong> Electrical & electronic measurements, OSH application, IoT-based embedded system programming, low-voltage installation, lightning protection systems, building security inspection (CCTV/alarms), and Building Automation Systems (BAS).</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Awards Section -->
+        <section id="awards" class="section">
+            <h2 class="section-title"><i class="fa-solid fa-trophy"></i> Awards & Honors</h2>
             <div class="grid-layout">
 
                 <div class="card">
                     <div class="card-header">
                         <div>
-                            <h3 class="card-title" contenteditable="true">Juara 3 Innovation Track - Huawei ICT Competition</h3>
-                            <div class="card-subtitle" contenteditable="true">Tingkat Nasional | Dec 2024</div>
+                            <h3 class="card-title" contenteditable="true">3rd Place Innovation Track (National Level)</h3>
+                            <div class="card-subtitle" contenteditable="true">Huawei ICT Competition 2024–2025</div>
                         </div>
                     </div>
                     <div class="card-body" contenteditable="true">
-                        Penghargaan nasional atas pengembangan Driver Fatigue Detection System berbasis kecerdasan buatan dan komputasi awan.
+                        I won 3rd Place in the Innovation Track at the Huawei ICT Competition 2024–2025 National Final, organized by Huawei through the Huawei ICT Academy. This award was given for the development of the Driver Fatigue Detection Monitoring System project, an AI-based solution designed to detect driver fatigue in real time to reduce the risk of traffic accidents. In this competition, projects were evaluated based on innovation, technological implementation, social impact, and potential for industrial application.
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-header">
                         <div>
-                            <h3 class="card-title" contenteditable="true">Google IT Support Certificate</h3>
-                            <div class="card-subtitle" contenteditable="true">Coursera / Google</div>
+                            <h3 class="card-title" contenteditable="true">Bank Indonesia Scholarship Awardee</h3>
+                            <div class="card-subtitle" contenteditable="true">Bank Indonesia & GenBI</div>
                         </div>
                     </div>
                     <div class="card-body" contenteditable="true">
-                        Kompetensi komprehensif dalam troubleshooting teknis, jaringan komputer, administrasi sistem, dan keamanan cyber.
+                        A recipient of a scholarship from Bank Indonesia awarded to high-achieving students based on academic qualifications, leadership, and social responsibility. As a scholarship recipient, I participated in personal development programs including leadership and communication training. Active member of the Generasi Baru Indonesia (GenBI) community.
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-header">
                         <div>
-                            <h3 class="card-title" contenteditable="true">Sertifikasi Teknis Cisco & Dicoding</h3>
-                            <div class="card-subtitle" contenteditable="true">Cisco, AWS & Microsoft Azure</div>
+                            <h3 class="card-title" contenteditable="true">Student Exchange Program</h3>
+                            <div class="card-subtitle" contenteditable="true">Kampus Merdeka - Batam State Polytechnic</div>
                         </div>
                     </div>
                     <div class="card-body" contenteditable="true">
-                        CCNAv7 Enterprise Networking, CyberOps Associate, AWS Cloud Practitioner Essentials, dan Microsoft Azure Gen AI Developer.
+                        A program of the Ministry of Education, Culture, Research, and Technology under the Kampus Merdeka initiative. Participated at Batam State Polytechnic, gaining academic and cultural experiences through interdisciplinary courses and Nusantara module activities.
                     </div>
                 </div>
 
@@ -258,11 +504,11 @@
         <section id="contact" class="section">
             <h2 class="section-title"><i class="fa-solid fa-paper-plane"></i> Contact Me</h2>
             <div class="card contact-card">
-                <p>Interested in collaborating or exploring career opportunities in IT Support, Computer Vision, or AI Engineering</p>
+                <p>Interested in collaborating or exploring career opportunities in IT Support, Computer Vision, or AI Engineering?</p>
                 <div class="contact-links">
-                    <a href="mailto:difla78@gmail.com" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Kirim Email</a>
-                    <a href="https://www.linkedin.com/in/tiflaalma/" class="btn btn-secondary"><i class="fa-brands fa-linkedin"></i> Profil LinkedIn</a>
-                    <a href="https://github.com/tiflalm" class="btn btn-outline-dark"><i class="fa-brands fa-github"></i> Repository GitHub</a>
+                    <a href="mailto:difla78@gmail.com" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Send Email</a>
+                    <a href="https://www.linkedin.com/in/tiflaalma/" class="btn btn-secondary"><i class="fa-brands fa-linkedin"></i> LinkedIn Profile</a>
+                    <a href="https://github.com/tiflalm" class="btn btn-outline-dark"><i class="fa-brands fa-github"></i> GitHub Repository</a>
                 </div>
             </div>
         </section>
